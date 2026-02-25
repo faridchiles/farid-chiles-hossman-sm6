@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- 
+    Declaración del tipo de documento.
+    Indica que estamos utilizando HTML5.
+-->
+
+<html lang="es">
+<!-- 
+    La etiqueta <html> contiene todo el contenido de la página.
+    El atributo lang="es" indica que el idioma es español.
+-->
+
+<head>
+    <!-- ================================
+         CONFIGURACIÓN BÁSICA DEL DOCUMENTO
+         ================================ -->
+
+    <meta charset="UTF-8">
+    <!-- Permite usar caracteres especiales como tildes, ñ, símbolos, etc. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hace que la página sea adaptable a dispositivos móviles (responsive) -->
+
+    <title>Diccionario Completo de Servicios Web</title>
+    <!-- Título que aparece en la pestaña del navegador -->
+
+    <style>
+        /* ==========================================
+           ESTILOS GENERALES (CSS)
+           ========================================== */
+
+        body {
+            font-family: Arial, sans-serif; /* Tipo de letra */
+            margin: 0; /* Quita márgenes por defecto */
+            background: linear-gradient(to right, #1f4037, #99f2c8);
+            /* Fondo degradado */
+        }
+
+        header {
+            background-color: #0f2027; /* Color oscuro */
+            color: white; /* Texto blanco */
+            padding: 25px; /* Espacio interno */
+            text-align: center; /* Centra el texto */
+        }
+
+        .contenedor {
+            padding: 20px; /* Espacio interno general */
+        }
+
+        .card {
+            background: white; /* Fondo blanco */
+            padding: 20px;
+            margin-bottom: 20px; /* Espacio entre tarjetas */
+            border-radius: 12px; /* Bordes redondeados */
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            /* Sombra para efecto visual */
+            transition: transform 0.3s ease;
+            /* Animación suave */
+        }
+
+        /* Efecto cuando se pasa el mouse */
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        h2 {
+            color: #0f2027;
+        }
+
+        h3 {
+            color: #1f4037;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #0f2027;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ================================
+     ENCABEZADO PRINCIPAL
+     ================================ -->
+<header>
+    <h1>📘 Diccionario Completo de Servicios Web</h1>
+</header>
+
+<div class="contenedor">
+
+    <!-- =====================================================
+         1. DEFINICIÓN Y CONCEPTOS CLAVE DE SERVICIOS WEB
+         ===================================================== -->
+    <div class="card">
+        <h2>🔵 1. Definición y Conceptos Clave</h2>
+
+        <!-- Explicación principal -->
+        <p>
+            Un servicio web es un sistema que permite la comunicación e intercambio
+            de datos entre aplicaciones a través de Internet.
+        </p>
+
+        <p>
+            Permite que sistemas desarrollados en distintos lenguajes y plataformas
+            puedan interactuar de manera estandarizada.
+        </p>
+
+        <!-- Lista de conceptos importantes -->
+        <h3>Conceptos Clave:</h3>
+        <ul>
+            <li><strong>Interoperabilidad:</strong> Capacidad de sistemas distintos para comunicarse.</li>
+            <li><strong>Cliente-Servidor:</strong> Un cliente solicita y el servidor responde.</li>
+            <li><strong>Mensajes estructurados:</strong> Datos enviados en XML o JSON.</li>
+            <li><strong>Independencia de plataforma:</strong> No importa el sistema operativo.</li>
+        </ul>
+
+        <p><strong>Conclusión:</strong> Permiten que aplicaciones diferentes “hablen” entre sí.</p>
+    </div>
+
+    <!-- =====================================================
+         2. ARQUITECTURA ORIENTADA A SERVICIOS (SOA)
+         ===================================================== -->
+    <div class="card">
+        <h2>🟣 2. Arquitectura Orientada a Servicios (SOA)</h2>
+
+        <p>
+            SOA es un modelo donde el sistema se divide en servicios independientes
+            que pueden reutilizarse en diferentes aplicaciones.
+        </p>
+
+        <h3>Principios:</h3>
+        <ul>
+            <li>Reutilización</li>
+            <li>Bajo acoplamiento</li>
+            <li>Interoperabilidad</li>
+            <li>Descubrimiento</li>
+            <li>Contrato de servicio</li>
+        </ul>
+
+        <p>
+            SOA permite crear sistemas más flexibles, escalables y fáciles de mantener.
+        </p>
+    </div>
+
+    <!-- =====================================================
+         3. BENEFICIOS Y DESAFÍOS
+         ===================================================== -->
+    <div class="card">
+        <h2>🟢 3. Beneficios y Desafíos</h2>
+
+        <h3>Beneficios:</h3>
+        <ul>
+            <li>Integración de sistemas</li>
+            <li>Reducción de costos</li>
+            <li>Escalabilidad</li>
+            <li>Reutilización</li>
+        </ul>
+
+        <h3>Desafíos:</h3>
+        <ul>
+            <li>Seguridad</li>
+            <li>Complejidad</li>
+            <li>Latencia</li>
+        </ul>
+    </div>
+
+    <!-- =====================================================
+         4. TIPOS DE SERVICIOS WEB
+         ===================================================== -->
+    <div class="card">
+        <h2>🔵 4. Tipos de Servicios Web</h2>
+
+        <h3>SOAP</h3>
+        <p>
+            Protocolo formal que utiliza XML para estructurar mensajes.
+            Es común en sistemas empresariales con alta seguridad.
+        </p>
+
+        <h3>REST</h3>
+        <p>
+            Estilo arquitectónico más simple que usa HTTP y JSON.
+            Es el más utilizado en APIs modernas.
+        </p>
+    </div>
+
+    <!-- =====================================================
+         5. PROTOCOLOS Y ESTÁNDARES
+         ===================================================== -->
+    <div class="card">
+        <h2>🌐 5. Protocolos y Estándares</h2>
+
+        <p><strong>HTTP:</strong> Protocolo base de comunicación web.</p>
+        <p><strong>XML:</strong> Lenguaje de marcado estructurado.</p>
+        <p><strong>JSON:</strong> Formato ligero de intercambio de datos.</p>
+        <p><strong>WSDL:</strong> Describe servicios SOAP.</p>
+        <p><strong>UDDI:</strong> Registro para descubrir servicios web.</p>
+    </div>
+
+    <!-- =====================================================
+         6. APLICACIONES EN INDUSTRIAS
+         ===================================================== -->
+    <div class="card">
+        <h2>🏢 6. Aplicaciones en Industrias</h2>
+
+        <p>Sector financiero, salud, comercio electrónico y logística utilizan servicios web para integrar sistemas y automatizar procesos.</p>
+    </div>
+
+    <!-- =====================================================
+         7. CASOS DE ESTUDIO
+         ===================================================== -->
+    <div class="card">
+        <h2>📊 7. Casos de Estudio</h2>
+
+        <p><strong>Amazon:</strong> APIs REST para comercio electrónico global.</p>
+        <p><strong>Netflix:</strong> Microservicios REST para distribución masiva de contenido.</p>
+        <p><strong>PayPal:</strong> Procesamiento de pagos seguros en tiempo real.</p>
+    </div>
+
+    <!-- =====================================================
+         CONCLUSIÓN
+         ===================================================== -->
+    <div class="card">
+        <h2>🧠 Conclusión</h2>
+
+        <p>
+            Los servicios web son fundamentales en la transformación digital.
+            REST y SOAP permiten comunicación entre sistemas distribuidos.
+        </p>
+    </div>
+
+</div>
+
+<!-- ================================
+     PIE DE PÁGINA
+     ================================ -->
+<footer>
+    © 2026 - Proyecto Académico Servicios Web
+</footer>
+
+</body>
+</html>
