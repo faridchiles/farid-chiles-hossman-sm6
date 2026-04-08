@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "nombre": "Ana García",
+    "email": "ana@empresa.com",
+    "rol": "admin",
+    "activo": true
+  },
+  {
+    "id": 3,
+    "nombre": "María López",
+    "email": "maria@empresa.com",
+    "rol": "viewer",
+    "activo": false
+  }
+]
